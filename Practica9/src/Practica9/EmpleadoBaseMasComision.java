@@ -21,4 +21,8 @@ public class EmpleadoBaseMasComision extends EmpleadoPorComision{
     public double getSalarioBase(){
         return this.salarioBase;
     }
+    public  double ingresos(){
+        double ingresos=super.ingresos()+salarioBase;
+        return ingresos;
+    }
 }
