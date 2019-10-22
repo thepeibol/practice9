@@ -9,11 +9,11 @@ package Practica9;
  *
  * @author Peibol
  */
-public class EmpleadoHorasExtra extends Empleado{
+public class EmpleadoPorHoras extends Empleado{
 	private int horas;
 	private double sueldo;
 
-	public EmpleadoHorasExtra(String nombre,String apellido,String nss,int horas,double sueldo){
+	public EmpleadoPorHoras(String nombre,String apellido,String nss,double sueldo,int horas){
         super(nombre,apellido,nss);
         sethoras(horas);
         setsueldo(sueldo);
