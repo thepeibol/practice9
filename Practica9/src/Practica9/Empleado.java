@@ -14,17 +14,17 @@ public abstract class Empleado {
     private String apellido;
     private String nss;
 public Empleado(String nombre,String apellido,String nss){
-    this.nombre=nombre;
-    this.apellido=apellido;
-    this.nss=nss;
+    setNombre(nombre);
+    setApellido(apellido);
+    setNss(nss);
 }
-public void setNombre(){
+public void setNombre(String nombre){
     this.nombre = nombre;
 }
-public void setApellido(){
+public void setApellido(String apellido){
     this.apellido=apellido;
 }
-public void setNss(){
+public void setNss(String nss){
     this.nss=nss;
 }
 public String getNombre(){
@@ -36,7 +36,7 @@ public String getApellido(){
 public String getNss(){
     return this.nss;
 }
-public abstract double Ingresos();
+public abstract double ingresos();
 public String toString(){
     return "Nombre: "+ this.nombre + "\nApellido: "+this.apellido + "\nNSS: "+this.nss;
 }
